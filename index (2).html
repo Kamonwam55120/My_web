@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Web + Google Sheet</title>
+<meta charset="UTF-8">
+<title>Index</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    background: url('https://p4.wallpaperbetter.com/wallpaper/676/52/867/doraemon-doraemon-anime-1920x1080-wallpaper-preview.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  .container {
+    background: rgba(255, 255, 255, 0.7);
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 10px;
+  }
+</style>
 </head>
 <body>
-  <h1>ข้อมูลจาก Google Sheet</h1>
-  <ul id="sheet-data"></ul>
-
-  <script>
-    fetch('https://kamonwam55120.github.io/My_web/')
-      .then(res => res.json())
-      .then(data => {
-        const ul = document.getElementById('sheet-data');
-        data.forEach(row => {
-          const li = document.createElement('li');
-          li.textContent = row.name + ' - ' + row.email;
-          ul.appendChild(li);
-        });
-      });
-  </script>
+  <div class="container">
+    😊<br><br>
+    <button onclick="location.href='data.html'">กรอกข้อมูล</button>
+  </div>
 </body>
 </html>
-
